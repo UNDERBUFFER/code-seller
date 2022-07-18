@@ -1,0 +1,32 @@
+.header {
+  grid-row: 1 / 2;
+}
+
+.border-block {
+  background-color: rgb(55, 55, 55);
+  width: 90%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: rgb(200, 200, 200);
+}
+
+.navigation ul {
+  padding: 0 0;
+  margin-top: -8px;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 35px;
+  font-size: 0.8em;
+}
+
+.navigation li {
+  background-color: black;
+  padding: 0 1em;
+}
