@@ -1,0 +1,36 @@
+@media (max-width: 940px) {
+  .content {
+    grid-template-columns: none;
+    grid-template-rows: 40px 1fr;
+    grid-template-areas:  "menu"
+                          "data";
+    gap: calc(100px / 4);
+  }
+
+  .data-items {
+    grid-template-columns: repeat(auto-fill, 160px);
+    gap: 4vw 4vw;
+  }
+
+  .left-menu {
+    overflow-x: auto;
+    font-size: 0.9em;
+  }
+  .left-menu li {
+    margin: 0;
+    white-space: nowrap;
+  }
+  .left-menu ul {
+    flex-direction: row;
+  }
+  .left-menu li:last-child {
+    margin: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .data-items {
+    grid-template-columns: repeat(2, minmax(100px, 160px));
+    grid-auto-rows: calc(200px + 10vw);
+  }
+}
